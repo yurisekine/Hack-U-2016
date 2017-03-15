@@ -1,0 +1,844 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="uzura.ttf">
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Smoothy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gingham.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Knm-RE-vQi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4y-HG-nuT">
+                                <rect key="frame" x="30" y="377" width="315" height="95"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="40"/>
+                                <state key="normal" title="スタート" backgroundImage="button.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="GEg-oy-c2Q" kind="show" id="e8d-jF-KSm"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="topname.png" translatesAutoresizingMaskIntoConstraints="NO" id="C6G-gE-YZs">
+                                <rect key="frame" x="11" y="46" width="356" height="204"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61H-f6-gqo">
+                                <rect key="frame" x="32" y="509" width="315" height="95"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="40"/>
+                                <state key="normal" title="説明" backgroundImage="button.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bud-au-Brw" kind="show" id="cs1-0o-WAe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="6yd-ha-stz">
+                    <connections>
+                        <action selector="panLabel:" destination="BYZ-38-t0r" id="E0z-vy-0LU"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="272.5" y="287.5"/>
+        </scene>
+        <!--Explanation-->
+        <scene sceneID="Zbx-8h-xMO">
+            <objects>
+                <viewController id="bud-au-Brw" customClass="Explanation" customModule="Smoothy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RBw-FS-uRF"/>
+                        <viewControllerLayoutGuide type="bottom" id="YEK-MY-wG1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0gF-Nk-hlb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gingham.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2LN-cG-26C">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="アイコンの説明" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5wd-zJ-KiD">
+                                <rect key="frame" x="23" y="197" width="161" height="32"/>
+                                <color key="backgroundColor" red="1" green="0.93176433179999996" blue="0.8540350766" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="アプリの説明" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTj-iz-bzB">
+                                <rect key="frame" x="23" y="20" width="161" height="32"/>
+                                <color key="backgroundColor" red="1" green="0.93176433179999996" blue="0.8540350766" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Dy-vd-3b6">
+                                <rect key="frame" x="23" y="244" width="329" height="395"/>
+                                <color key="backgroundColor" red="1" green="0.93176433179999996" blue="0.8540350766" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="spring.png" translatesAutoresizingMaskIntoConstraints="NO" id="68j-w0-4Il">
+                                <rect key="frame" x="50" y="255" width="40" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sweet.png" translatesAutoresizingMaskIntoConstraints="NO" id="OIa-k0-xh7">
+                                <rect key="frame" x="50" y="351" width="40" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fresh.png" translatesAutoresizingMaskIntoConstraints="NO" id="PAr-4K-pbE">
+                                <rect key="frame" x="50" y="399" width="40" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy.png" translatesAutoresizingMaskIntoConstraints="NO" id="wrg-Bt-PIP">
+                                <rect key="frame" x="50" y="447" width="40" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nervous.png" translatesAutoresizingMaskIntoConstraints="NO" id="NPa-Oh-NGZ">
+                                <rect key="frame" x="50" y="495" width="40" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="diet.png" translatesAutoresizingMaskIntoConstraints="NO" id="0sP-NC-gwS">
+                                <rect key="frame" x="50" y="543" width="40" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tired2.png" translatesAutoresizingMaskIntoConstraints="NO" id="fNk-yg-4Qo">
+                                <rect key="frame" x="190" y="495" width="40" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="health3.png" translatesAutoresizingMaskIntoConstraints="NO" id="hZr-Pu-occ">
+                                <rect key="frame" x="190" y="589" width="40" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="skin.png" translatesAutoresizingMaskIntoConstraints="NO" id="cwI-Vj-0LD">
+                                <rect key="frame" x="190" y="543" width="40" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="unhappy2.png" translatesAutoresizingMaskIntoConstraints="NO" id="dTE-dS-8Sj">
+                                <rect key="frame" x="190" y="447" width="40" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mild.png" translatesAutoresizingMaskIntoConstraints="NO" id="1rd-Gi-pzB">
+                                <rect key="frame" x="190" y="399" width="40" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bitt.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xm1-DZ-BIc">
+                                <rect key="frame" x="190" y="351" width="40" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eye.png" translatesAutoresizingMaskIntoConstraints="NO" id="byO-ri-uzT">
+                                <rect key="frame" x="50" y="589" width="40" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imomushiman.png" translatesAutoresizingMaskIntoConstraints="NO" id="RkG-y9-m07">
+                                <rect key="frame" x="50" y="303" width="40" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="summer.png" translatesAutoresizingMaskIntoConstraints="NO" id="we0-XJ-LQ9">
+                                <rect key="frame" x="190" y="255" width="40" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="snowman.png" translatesAutoresizingMaskIntoConstraints="NO" id="5av-jG-ioS">
+                                <rect key="frame" x="190" y="303" width="40" height="40"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Spring" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vpx-K4-9Zz">
+                                <rect key="frame" x="98" y="259" width="84" height="32"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Summer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3R3-Tz-fVh">
+                                <rect key="frame" x="238" y="259" width="84" height="32"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Winter" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0iK-7W-E1J">
+                                <rect key="frame" x="238" y="307" width="84" height="32"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bitter" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHa-dV-lHu">
+                                <rect key="frame" x="238" y="355" width="84" height="32"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mild" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kd5-hN-f9M">
+                                <rect key="frame" x="238" y="403" width="84" height="32"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Unhappy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X7b-ch-MhR">
+                                <rect key="frame" x="238" y="451" width="84" height="32"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tired" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBr-Y4-vL4">
+                                <rect key="frame" x="238" y="499" width="84" height="32"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Skin Care" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Na6-vf-Pte">
+                                <rect key="frame" x="238" y="547" width="84" height="32"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Healthy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIa-ld-K2s">
+                                <rect key="frame" x="238" y="593" width="84" height="32"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Autumn" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6pc-7a-wFA">
+                                <rect key="frame" x="98" y="307" width="84" height="32"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sweet" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7e-Xp-nTR">
+                                <rect key="frame" x="98" y="355" width="84" height="32"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fresh" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccP-Qb-lJ0">
+                                <rect key="frame" x="98" y="403" width="84" height="32"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Happy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDh-8e-Fhf">
+                                <rect key="frame" x="98" y="451" width="84" height="32"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nervous" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vmy-fe-ipl">
+                                <rect key="frame" x="98" y="499" width="84" height="32"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftg-XH-u73">
+                                <rect key="frame" x="164" y="637" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="15"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <action selector="modoru" destination="bud-au-Brw" eventType="touchUpInside" id="hHJ-CZ-zGJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Diet" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPH-UU-LTF">
+                                <rect key="frame" x="98" y="547" width="84" height="32"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Eyes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4Q-78-Pr9">
+                                <rect key="frame" x="98" y="593" width="84" height="32"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LbW-yi-GNQ">
+                                <rect key="frame" x="23" y="66" width="329" height="115"/>
+                                <color key="backgroundColor" red="1" green="0.93176433179999996" blue="0.8540350766" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">季節、風味、気分、効能の中から自分が気になる
+ものをミキサーに入れてシェイクすると、
+あっという間にあなた好みのスムージーの完成！
+
+携帯をシェイクするときは、周囲に気をつけて、
+携帯が飛んでいかないようにしましょう。</string>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="14.899999618530273"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fMd-sM-pEo"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ry0-N6-2Xq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="272.5" y="1070.5"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="WOg-u6-kUc">
+            <objects>
+                <viewController id="GEg-oy-c2Q" customClass="ViewController2" customModule="Smoothy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ajW-vr-So2"/>
+                        <viewControllerLayoutGuide type="bottom" id="U3J-25-TCh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f5b-qI-CEa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gingham.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="KQ9-KN-34d">
+                                <rect key="frame" x="0.0" y="587" width="375" height="80"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zmi-dB-xAB">
+                                <rect key="frame" x="297" y="614" width="75" height="45"/>
+                                <state key="normal" title="NEXT"/>
+                                <connections>
+                                    <segue destination="lY3-OI-bsH" kind="show" identifier="next" id="FOq-ac-qSK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVP-UL-NpK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
+                                <color key="backgroundColor" red="0.83921568627450982" green="0.76862745098039209" blue="0.69411764705882351" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="アイコンをドラッグしてミキサーにいれてね" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9KX-ub-dAY">
+                                <rect key="frame" x="5" y="124" width="363" height="43"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="18"/>
+                                <color key="textColor" red="0.31764705882352939" green="0.31764705882352939" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spring.png" translatesAutoresizingMaskIntoConstraints="NO" id="68G-n8-MQ1">
+                                <rect key="frame" x="23" y="15" width="65" height="65"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="EHV-87-6Zf"/>
+                                    <constraint firstAttribute="width" constant="65" id="k65-ih-QvX"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="cFv-US-xLf" appends="YES" id="6N7-Zb-6sU"/>
+                                </connections>
+                            </imageView>
+                            <imageView tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="summer.png" translatesAutoresizingMaskIntoConstraints="NO" id="3gZ-cE-8eF">
+                                <rect key="frame" x="111" y="15" width="65" height="65"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="r94-a1-dtr"/>
+                                    <constraint firstAttribute="height" constant="65" id="xUE-kV-6dQ"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="mPK-I3-8hb" appends="YES" id="fhr-W1-zq3"/>
+                                </connections>
+                            </imageView>
+                            <imageView tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imomushiman.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sop-zU-e1b">
+                                <rect key="frame" x="199" y="15" width="65" height="65"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="3aO-IE-wn0"/>
+                                    <constraint firstAttribute="width" constant="65" id="5vP-ql-m4d"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="e1q-rP-Fcf" appends="YES" id="ef4-FQ-otY"/>
+                                </connections>
+                            </imageView>
+                            <imageView tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snowman.png" translatesAutoresizingMaskIntoConstraints="NO" id="sow-WP-CTE">
+                                <rect key="frame" x="287" y="15" width="65" height="65"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="93c-c0-2Zh"/>
+                                    <constraint firstAttribute="width" constant="65" id="mOP-UN-qW4"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="dXV-i7-SO9" appends="YES" id="aJ9-uo-lrM"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Og5-y5-VkB">
+                                <rect key="frame" x="0.0" y="85" width="90" height="30"/>
+                                <color key="backgroundColor" red="0.83921568627450982" green="0.76862745098039209" blue="0.69411764705882351" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="18"/>
+                                <state key="normal" title="季節">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tabButton:" destination="GEg-oy-c2Q" eventType="touchUpInside" id="rHP-tq-zkg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciM-wl-kgW">
+                                <rect key="frame" x="95" y="85" width="90" height="30"/>
+                                <color key="backgroundColor" red="0.78823529411764703" green="0.69411764705882351" blue="0.59215686274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="18"/>
+                                <state key="normal" title="風味">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tabButton:" destination="GEg-oy-c2Q" eventType="touchUpInside" id="Bpi-Q0-ntI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yga-7G-ID9">
+                                <rect key="frame" x="190" y="85" width="90" height="30"/>
+                                <color key="backgroundColor" red="0.73333333333333328" green="0.61568627450980395" blue="0.49019607843137253" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="18"/>
+                                <state key="normal" title="気分">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tabButton:" destination="GEg-oy-c2Q" eventType="touchUpInside" id="Cfb-Do-UfQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uB9-7v-uxE">
+                                <rect key="frame" x="285" y="85" width="90" height="30"/>
+                                <color key="backgroundColor" red="0.5490196078431373" green="0.46274509803921571" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="18"/>
+                                <state key="normal" title="効能">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tabButton:" destination="GEg-oy-c2Q" eventType="touchUpInside" id="AEF-RS-w4s"/>
+                                </connections>
+                            </button>
+                            <imageView tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sweet.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kku-V5-rT8">
+                                <rect key="frame" x="23" y="15" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="4JL-Tr-L0d"/>
+                                    <constraint firstAttribute="height" constant="65" id="aKP-wc-O09"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="3Po-R7-Usu" appends="YES" id="neJ-Me-k0Y"/>
+                                </connections>
+                            </imageView>
+                            <imageView tag="5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitt.png" translatesAutoresizingMaskIntoConstraints="NO" id="J5d-SF-EBw">
+                                <rect key="frame" x="111" y="15" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="DKc-Rc-exI"/>
+                                    <constraint firstAttribute="width" constant="65" id="Or2-qj-mw1"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Mlz-kh-DEq" appends="YES" id="4ES-v1-lXS"/>
+                                </connections>
+                            </imageView>
+                            <imageView tag="6" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fresh.png" translatesAutoresizingMaskIntoConstraints="NO" id="HGj-Es-gbk">
+                                <rect key="frame" x="199" y="15" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="GwO-Ed-xD7"/>
+                                    <constraint firstAttribute="width" constant="65" id="QHr-SQ-kj9"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="iNx-Er-1xY" appends="YES" id="pFw-S6-Jij"/>
+                                </connections>
+                            </imageView>
+                            <imageView tag="7" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mild.png" translatesAutoresizingMaskIntoConstraints="NO" id="DHY-Fp-0Ft">
+                                <rect key="frame" x="287" y="15" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="2vf-zh-1d6"/>
+                                    <constraint firstAttribute="height" constant="65" id="Iv4-pb-QZv"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Rxc-NM-CQ4" appends="YES" id="K0U-KY-8N6"/>
+                                </connections>
+                            </imageView>
+                            <imageView tag="8" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="happy.png" translatesAutoresizingMaskIntoConstraints="NO" id="hPS-Qz-V6L">
+                                <rect key="frame" x="23" y="15" width="65" height="65"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="KxM-Ev-OUc"/>
+                                    <constraint firstAttribute="width" constant="65" id="b2x-gp-Pno"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="04h-qB-gvp" appends="YES" id="nUN-uT-bfr"/>
+                                </connections>
+                            </imageView>
+                            <imageView tag="9" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unhappy2.png" translatesAutoresizingMaskIntoConstraints="NO" id="HV8-Og-35w">
+                                <rect key="frame" x="111" y="15" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="U0l-sl-ADO"/>
+                                    <constraint firstAttribute="width" constant="65" id="yT2-IX-meK"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="dik-dr-GGk" appends="YES" id="WeU-Kp-4wQ"/>
+                                </connections>
+                            </imageView>
+                            <imageView tag="10" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nervous.png" translatesAutoresizingMaskIntoConstraints="NO" id="Q1c-Ev-elm">
+                                <rect key="frame" x="199" y="15" width="65" height="65"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="ZEt-AU-sqn"/>
+                                    <constraint firstAttribute="height" constant="65" id="dvF-gj-dT3"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="sVn-bl-NgG" appends="YES" id="x6b-uf-WQq"/>
+                                </connections>
+                            </imageView>
+                            <imageView tag="11" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tired2.png" translatesAutoresizingMaskIntoConstraints="NO" id="y1o-e9-905">
+                                <rect key="frame" x="287" y="15" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="UHj-4U-pV7"/>
+                                    <constraint firstAttribute="height" constant="65" id="mMT-4F-OfG"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Wci-WY-e5c" appends="YES" id="dEv-B6-VQI"/>
+                                </connections>
+                            </imageView>
+                            <imageView tag="12" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diet.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vg3-QJ-hdb">
+                                <rect key="frame" x="23" y="15" width="65" height="65"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="GQS-Ke-Ten"/>
+                                    <constraint firstAttribute="height" constant="65" id="iJn-wv-6cj"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="TOW-dA-zuf" appends="YES" id="FNS-3r-0Tw"/>
+                                </connections>
+                            </imageView>
+                            <imageView tag="13" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skin.png" translatesAutoresizingMaskIntoConstraints="NO" id="L5K-oe-geA">
+                                <rect key="frame" x="111" y="15" width="65" height="65"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="HZa-7c-FP4"/>
+                                    <constraint firstAttribute="width" constant="65" id="SxA-DX-Hfg"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="iaQ-pi-9ED" appends="YES" id="crk-I1-ZPd"/>
+                                </connections>
+                            </imageView>
+                            <imageView tag="14" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eye.png" translatesAutoresizingMaskIntoConstraints="NO" id="aQN-lP-sgj">
+                                <rect key="frame" x="199" y="15" width="65" height="65"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="UAz-FU-El2"/>
+                                    <constraint firstAttribute="width" constant="65" id="hf2-Ja-RkH"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Fds-LS-kbJ" appends="YES" id="zpf-Zm-4Zu"/>
+                                </connections>
+                            </imageView>
+                            <imageView tag="15" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="health3.png" translatesAutoresizingMaskIntoConstraints="NO" id="Myl-02-d4S">
+                                <rect key="frame" x="287" y="15" width="65" height="65"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="Mkc-ZT-nIT"/>
+                                    <constraint firstAttribute="height" constant="65" id="t6u-uc-PMT"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Hnu-zh-EGx" appends="YES" id="MP8-5s-hOf"/>
+                                </connections>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mixer.png" translatesAutoresizingMaskIntoConstraints="NO" id="5a0-az-eCP">
+                                <rect key="frame" x="27" y="229" width="184" height="367"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="top.png" translatesAutoresizingMaskIntoConstraints="NO" id="dAV-QD-Iyg">
+                                <rect key="frame" x="199" y="506" width="169" height="79"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6WR-38-zCd">
+                                <rect key="frame" x="203" y="518" width="161" height="56"/>
+                                <connections>
+                                    <action selector="topClose" destination="GEg-oy-c2Q" eventType="touchUpInside" id="R4q-b4-fEh"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pahu.png" translatesAutoresizingMaskIntoConstraints="NO" id="R70-fE-8mb">
+                                <rect key="frame" x="199" y="193" width="87" height="75"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="top.png" translatesAutoresizingMaskIntoConstraints="NO" id="Hsy-ko-dLr">
+                                <rect key="frame" x="34" y="197" width="169" height="114"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGl-Ho-GX7">
+                                <rect key="frame" x="194" y="329" width="178" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="0.51293720606034021" blue="0.95109302106581894" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KVA-00-s1W">
+                                <rect key="frame" x="47" y="229" width="144" height="52"/>
+                                <connections>
+                                    <action selector="topOpen" destination="GEg-oy-c2Q" eventType="touchUpInside" id="8s5-kN-Kb9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.93176433177384199" blue="0.85403507655257305" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Sop-zU-e1b" firstAttribute="centerY" secondItem="f5b-qI-CEa" secondAttribute="centerY" constant="-286" id="1LG-nk-gK3"/>
+                            <constraint firstItem="Sop-zU-e1b" firstAttribute="centerX" secondItem="f5b-qI-CEa" secondAttribute="centerX" constant="44" id="EFI-fU-XYD"/>
+                            <constraint firstItem="68G-n8-MQ1" firstAttribute="centerX" secondItem="f5b-qI-CEa" secondAttribute="centerX" constant="-132" id="Guj-5i-cCI"/>
+                            <constraint firstItem="y1o-e9-905" firstAttribute="centerY" secondItem="f5b-qI-CEa" secondAttribute="centerY" constant="-286" id="LDP-Pa-7a8"/>
+                            <constraint firstItem="Vg3-QJ-hdb" firstAttribute="centerY" secondItem="f5b-qI-CEa" secondAttribute="centerY" constant="-286" id="LgW-SZ-DKc"/>
+                            <constraint firstItem="HGj-Es-gbk" firstAttribute="centerX" secondItem="f5b-qI-CEa" secondAttribute="centerX" constant="44" id="QcL-LS-HKd"/>
+                            <constraint firstItem="3gZ-cE-8eF" firstAttribute="centerX" secondItem="f5b-qI-CEa" secondAttribute="centerX" constant="-44" id="TKT-2D-Z5p"/>
+                            <constraint firstItem="Myl-02-d4S" firstAttribute="centerY" secondItem="f5b-qI-CEa" secondAttribute="centerY" constant="-286" id="U3B-qW-I5Q"/>
+                            <constraint firstItem="hPS-Qz-V6L" firstAttribute="centerY" secondItem="f5b-qI-CEa" secondAttribute="centerY" constant="-286" id="VE6-dr-3NX"/>
+                            <constraint firstItem="HGj-Es-gbk" firstAttribute="centerY" secondItem="f5b-qI-CEa" secondAttribute="centerY" constant="-286" id="WOZ-iU-Mj7"/>
+                            <constraint firstItem="y1o-e9-905" firstAttribute="centerX" secondItem="f5b-qI-CEa" secondAttribute="centerX" constant="132" id="YBG-Kp-1bM"/>
+                            <constraint firstItem="aQN-lP-sgj" firstAttribute="centerY" secondItem="f5b-qI-CEa" secondAttribute="centerY" constant="-286" id="ZTt-db-fnN"/>
+                            <constraint firstItem="Vg3-QJ-hdb" firstAttribute="centerX" secondItem="f5b-qI-CEa" secondAttribute="centerX" constant="-132" id="Zse-bp-bA7"/>
+                            <constraint firstItem="68G-n8-MQ1" firstAttribute="centerY" secondItem="f5b-qI-CEa" secondAttribute="centerY" constant="-286" id="bfm-gW-kmw"/>
+                            <constraint firstItem="L5K-oe-geA" firstAttribute="centerY" secondItem="f5b-qI-CEa" secondAttribute="centerY" constant="-286" id="fon-yy-ihh"/>
+                            <constraint firstItem="Kku-V5-rT8" firstAttribute="centerX" secondItem="f5b-qI-CEa" secondAttribute="centerX" constant="-132" id="gPZ-3M-fcI"/>
+                            <constraint firstItem="J5d-SF-EBw" firstAttribute="centerY" secondItem="f5b-qI-CEa" secondAttribute="centerY" constant="-286" id="gdK-Ty-i0E"/>
+                            <constraint firstItem="HV8-Og-35w" firstAttribute="centerY" secondItem="f5b-qI-CEa" secondAttribute="centerY" constant="-286" id="jfK-H7-3wY"/>
+                            <constraint firstItem="aQN-lP-sgj" firstAttribute="centerX" secondItem="f5b-qI-CEa" secondAttribute="centerX" constant="44" id="n8E-9p-udg"/>
+                            <constraint firstItem="L5K-oe-geA" firstAttribute="centerX" secondItem="f5b-qI-CEa" secondAttribute="centerX" constant="-44" id="o5Z-Q6-bin"/>
+                            <constraint firstItem="hPS-Qz-V6L" firstAttribute="centerX" secondItem="f5b-qI-CEa" secondAttribute="centerX" constant="-132" id="osL-U3-YBc"/>
+                            <constraint firstItem="DHY-Fp-0Ft" firstAttribute="centerY" secondItem="f5b-qI-CEa" secondAttribute="centerY" constant="-286" id="pvg-28-LnJ"/>
+                            <constraint firstItem="sow-WP-CTE" firstAttribute="centerY" secondItem="f5b-qI-CEa" secondAttribute="centerY" constant="-286" id="q7v-nS-1tG"/>
+                            <constraint firstItem="Myl-02-d4S" firstAttribute="centerX" secondItem="f5b-qI-CEa" secondAttribute="centerX" constant="132" id="qvc-Hx-DG0"/>
+                            <constraint firstItem="DHY-Fp-0Ft" firstAttribute="centerX" secondItem="f5b-qI-CEa" secondAttribute="centerX" constant="132" id="tSK-cz-ULo"/>
+                            <constraint firstItem="3gZ-cE-8eF" firstAttribute="centerY" secondItem="f5b-qI-CEa" secondAttribute="centerY" constant="-286" id="tVh-Cc-eqR"/>
+                            <constraint firstItem="J5d-SF-EBw" firstAttribute="centerX" secondItem="f5b-qI-CEa" secondAttribute="centerX" constant="-44" id="tuC-gq-v1G"/>
+                            <constraint firstItem="HV8-Og-35w" firstAttribute="centerX" secondItem="f5b-qI-CEa" secondAttribute="centerX" constant="-44" id="uZy-Hy-3Gy"/>
+                            <constraint firstItem="Q1c-Ev-elm" firstAttribute="centerY" secondItem="f5b-qI-CEa" secondAttribute="centerY" constant="-286" id="umF-Sh-NB6"/>
+                            <constraint firstItem="Q1c-Ev-elm" firstAttribute="centerX" secondItem="f5b-qI-CEa" secondAttribute="centerX" constant="44" id="v9k-nK-WVw"/>
+                            <constraint firstItem="sow-WP-CTE" firstAttribute="centerX" secondItem="f5b-qI-CEa" secondAttribute="centerX" constant="132" id="xYf-S6-iVF"/>
+                            <constraint firstItem="Kku-V5-rT8" firstAttribute="centerY" secondItem="f5b-qI-CEa" secondAttribute="centerY" constant="-286" id="y7H-qp-MCA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vNr-Xb-hVo"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="checkLabel" destination="9KX-ub-dAY" id="x8i-ha-jtX"/>
+                        <outlet property="iconLabel" destination="AVP-UL-NpK" id="2fN-Gs-HTt"/>
+                        <outlet property="pahuImage" destination="R70-fE-8mb" id="3Ui-0h-CJs"/>
+                        <outlet property="shakeLabel" destination="hGl-Ho-GX7" id="4nr-9t-tjo"/>
+                        <outlet property="topImage" destination="dAV-QD-Iyg" id="koW-fU-gkt"/>
+                        <outlet property="topImage2" destination="Hsy-ko-dLr" id="NDm-x8-9aX"/>
+                        <outletCollection property="iconCollection" destination="68G-n8-MQ1" collectionClass="NSMutableArray" id="DRC-PG-ZCe"/>
+                        <outletCollection property="iconCollection" destination="3gZ-cE-8eF" collectionClass="NSMutableArray" id="yfq-SD-OsP"/>
+                        <outletCollection property="iconCollection" destination="Sop-zU-e1b" collectionClass="NSMutableArray" id="aIQ-qk-zrC"/>
+                        <outletCollection property="iconCollection" destination="sow-WP-CTE" collectionClass="NSMutableArray" id="UH9-eU-EEY"/>
+                        <outletCollection property="iconCollection" destination="Kku-V5-rT8" collectionClass="NSMutableArray" id="c0R-kF-dI6"/>
+                        <outletCollection property="iconCollection" destination="J5d-SF-EBw" collectionClass="NSMutableArray" id="n1Q-Dw-kCm"/>
+                        <outletCollection property="iconCollection" destination="HGj-Es-gbk" collectionClass="NSMutableArray" id="dMs-bQ-GbC"/>
+                        <outletCollection property="iconCollection" destination="DHY-Fp-0Ft" collectionClass="NSMutableArray" id="t3i-I0-nbN"/>
+                        <outletCollection property="iconCollection" destination="hPS-Qz-V6L" collectionClass="NSMutableArray" id="2ap-Ze-EcX"/>
+                        <outletCollection property="iconCollection" destination="HV8-Og-35w" collectionClass="NSMutableArray" id="plJ-EK-4HP"/>
+                        <outletCollection property="iconCollection" destination="Q1c-Ev-elm" collectionClass="NSMutableArray" id="2ng-wu-hO8"/>
+                        <outletCollection property="iconCollection" destination="y1o-e9-905" collectionClass="NSMutableArray" id="ZqP-YH-osu"/>
+                        <outletCollection property="iconCollection" destination="Vg3-QJ-hdb" collectionClass="NSMutableArray" id="E3C-Ts-cjD"/>
+                        <outletCollection property="iconCollection" destination="L5K-oe-geA" collectionClass="NSMutableArray" id="V8J-4p-4Lr"/>
+                        <outletCollection property="iconCollection" destination="aQN-lP-sgj" collectionClass="NSMutableArray" id="fm5-4q-SUm"/>
+                        <outletCollection property="iconCollection" destination="Myl-02-d4S" collectionClass="NSMutableArray" id="8W6-KF-l79"/>
+                        <outletCollection property="xCollection" destination="Guj-5i-cCI" collectionClass="NSMutableArray" id="XwZ-4e-dfK"/>
+                        <outletCollection property="xCollection" destination="TKT-2D-Z5p" collectionClass="NSMutableArray" id="Hu9-2e-ZQi"/>
+                        <outletCollection property="xCollection" destination="EFI-fU-XYD" collectionClass="NSMutableArray" id="pqg-7z-14H"/>
+                        <outletCollection property="xCollection" destination="xYf-S6-iVF" collectionClass="NSMutableArray" id="aEx-mW-yXe"/>
+                        <outletCollection property="xCollection" destination="gPZ-3M-fcI" collectionClass="NSMutableArray" id="6nS-oD-u3I"/>
+                        <outletCollection property="xCollection" destination="tuC-gq-v1G" collectionClass="NSMutableArray" id="lAj-jv-Fge"/>
+                        <outletCollection property="yCollection" destination="bfm-gW-kmw" collectionClass="NSMutableArray" id="770-F2-eUq"/>
+                        <outletCollection property="yCollection" destination="tVh-Cc-eqR" collectionClass="NSMutableArray" id="Mgb-Nr-eeJ"/>
+                        <outletCollection property="yCollection" destination="1LG-nk-gK3" collectionClass="NSMutableArray" id="wq5-TL-otn"/>
+                        <outletCollection property="yCollection" destination="q7v-nS-1tG" collectionClass="NSMutableArray" id="YMq-rO-VlX"/>
+                        <outletCollection property="yCollection" destination="y7H-qp-MCA" collectionClass="NSMutableArray" id="mRX-Si-cdm"/>
+                        <outletCollection property="xCollection" destination="QcL-LS-HKd" collectionClass="NSMutableArray" id="xlu-ce-MDw"/>
+                        <outletCollection property="xCollection" destination="tSK-cz-ULo" collectionClass="NSMutableArray" id="3jY-z4-HhH"/>
+                        <outletCollection property="xCollection" destination="osL-U3-YBc" collectionClass="NSMutableArray" id="eGi-vz-41F"/>
+                        <outletCollection property="xCollection" destination="uZy-Hy-3Gy" collectionClass="NSMutableArray" id="eLU-VF-vSo"/>
+                        <outletCollection property="xCollection" destination="v9k-nK-WVw" collectionClass="NSMutableArray" id="ZsJ-M7-5B0"/>
+                        <outletCollection property="xCollection" destination="YBG-Kp-1bM" collectionClass="NSMutableArray" id="mje-DK-Hxd"/>
+                        <outletCollection property="xCollection" destination="Zse-bp-bA7" collectionClass="NSMutableArray" id="fAG-pv-ZVW"/>
+                        <outletCollection property="xCollection" destination="o5Z-Q6-bin" collectionClass="NSMutableArray" id="aC4-gm-74e"/>
+                        <outletCollection property="xCollection" destination="n8E-9p-udg" collectionClass="NSMutableArray" id="w1C-su-cxZ"/>
+                        <outletCollection property="xCollection" destination="qvc-Hx-DG0" collectionClass="NSMutableArray" id="OJw-p4-ma0"/>
+                        <outletCollection property="yCollection" destination="gdK-Ty-i0E" collectionClass="NSMutableArray" id="Zjb-k9-0Qn"/>
+                        <outletCollection property="yCollection" destination="WOZ-iU-Mj7" collectionClass="NSMutableArray" id="fwx-SA-gEw"/>
+                        <outletCollection property="yCollection" destination="pvg-28-LnJ" collectionClass="NSMutableArray" id="K1l-a1-W8U"/>
+                        <outletCollection property="yCollection" destination="VE6-dr-3NX" collectionClass="NSMutableArray" id="XOb-V7-lXu"/>
+                        <outletCollection property="yCollection" destination="jfK-H7-3wY" collectionClass="NSMutableArray" id="8lm-dX-XqP"/>
+                        <outletCollection property="yCollection" destination="umF-Sh-NB6" collectionClass="NSMutableArray" id="1a7-hQ-KeO"/>
+                        <outletCollection property="yCollection" destination="LDP-Pa-7a8" collectionClass="NSMutableArray" id="1nL-oB-CUW"/>
+                        <outletCollection property="yCollection" destination="LgW-SZ-DKc" collectionClass="NSMutableArray" id="Flr-hh-gmE"/>
+                        <outletCollection property="yCollection" destination="fon-yy-ihh" collectionClass="NSMutableArray" id="lNF-cs-hul"/>
+                        <outletCollection property="yCollection" destination="ZTt-db-fnN" collectionClass="NSMutableArray" id="Qx2-hQ-CEh"/>
+                        <outletCollection property="yCollection" destination="U3B-qW-I5Q" collectionClass="NSMutableArray" id="tpj-uJ-HLH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WSr-Jp-cX4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="cFv-US-xLf">
+                    <connections>
+                        <action selector="pan1:" destination="GEg-oy-c2Q" id="vgE-yI-8oe"/>
+                        <outlet property="delegate" destination="GEg-oy-c2Q" id="UjU-gm-WWA"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="mPK-I3-8hb">
+                    <connections>
+                        <action selector="pan1:" destination="GEg-oy-c2Q" id="FlQ-Ge-Lws"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="e1q-rP-Fcf">
+                    <connections>
+                        <action selector="pan1:" destination="GEg-oy-c2Q" id="7nL-Ie-eYP"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="dXV-i7-SO9">
+                    <connections>
+                        <action selector="pan1:" destination="GEg-oy-c2Q" id="nx4-dv-aZf"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Hnu-zh-EGx">
+                    <connections>
+                        <action selector="pan1:" destination="GEg-oy-c2Q" id="8DU-Mb-Kca"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Fds-LS-kbJ">
+                    <connections>
+                        <action selector="pan1:" destination="GEg-oy-c2Q" id="DIx-l8-Jkc"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="iaQ-pi-9ED">
+                    <connections>
+                        <action selector="pan1:" destination="GEg-oy-c2Q" id="N7B-fL-1gy"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="TOW-dA-zuf">
+                    <connections>
+                        <action selector="pan1:" destination="GEg-oy-c2Q" id="7s5-Ww-FYH"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="sVn-bl-NgG">
+                    <connections>
+                        <action selector="pan1:" destination="GEg-oy-c2Q" id="Z2f-do-tPq"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="dik-dr-GGk">
+                    <connections>
+                        <action selector="pan1:" destination="GEg-oy-c2Q" id="Z6U-vf-tUs"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Wci-WY-e5c">
+                    <connections>
+                        <action selector="pan1:" destination="GEg-oy-c2Q" id="0dk-R7-uJ6"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="04h-qB-gvp">
+                    <connections>
+                        <action selector="pan1:" destination="GEg-oy-c2Q" id="SuI-bN-NqY"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="3Po-R7-Usu">
+                    <connections>
+                        <action selector="pan1:" destination="GEg-oy-c2Q" id="ubc-WX-tKY"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Mlz-kh-DEq">
+                    <connections>
+                        <action selector="pan1:" destination="GEg-oy-c2Q" id="cMr-Wf-NGJ"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="iNx-Er-1xY">
+                    <connections>
+                        <action selector="pan1:" destination="GEg-oy-c2Q" id="JsE-c0-O3b"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Rxc-NM-CQ4">
+                    <connections>
+                        <action selector="pan1:" destination="GEg-oy-c2Q" id="C0d-Ni-7yT"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="2wD-jH-1yd"/>
+            </objects>
+            <point key="canvasLocation" x="752.5" y="287.5"/>
+        </scene>
+        <!--Final View Controller-->
+        <scene sceneID="Qvq-l8-iGG">
+            <objects>
+                <viewController id="lY3-OI-bsH" customClass="FinalViewController" customModule="Smoothy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="z8r-qW-1A5"/>
+                        <viewControllerLayoutGuide type="bottom" id="p4O-VQ-W0C"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VWU-fm-uhk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gingham.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="NWf-T0-RNf">
+                                <rect key="frame" x="0.0" y="324" width="375" height="343"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8n-Jx-nEu">
+                                <rect key="frame" x="165" y="617" width="45" height="30"/>
+                                <state key="normal" title="TOPへ"/>
+                                <connections>
+                                    <action selector="topModoru" destination="lY3-OI-bsH" eventType="touchUpInside" id="DyU-5p-YHn"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pinkSm.png" translatesAutoresizingMaskIntoConstraints="NO" id="IBK-pD-cEz">
+                                <rect key="frame" x="50" y="95" width="275" height="300"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="材料" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyR-IM-1dc">
+                                <rect key="frame" x="20" y="414" width="335" height="195"/>
+                                <color key="backgroundColor" red="0.82167467948717943" green="0.76560715866785756" blue="0.70173899779714421" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="スムージー名" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z83-zS-hIm">
+                                <rect key="frame" x="20" y="20" width="335" height="67"/>
+                                <color key="backgroundColor" red="0.98705929487179489" green="0.73084797292663695" blue="0.97448578390375507" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98431372549019602" green="0.91764705882352937" blue="0.81960784313725488" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="ingreLabel" destination="eyR-IM-1dc" id="SWV-XF-l1K"/>
+                        <outlet property="nameLabel" destination="Z83-zS-hIm" id="wIf-vV-1c5"/>
+                        <outlet property="smImage" destination="IBK-pD-cEz" id="f8x-9Z-HWF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="INW-zS-bBO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1237.5" y="287.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bitt.png" width="320" height="322"/>
+        <image name="button.png" width="326" height="93"/>
+        <image name="diet.png" width="350" height="350"/>
+        <image name="eye.png" width="350" height="350"/>
+        <image name="fresh.png" width="320" height="322"/>
+        <image name="gingham.jpg" width="1280" height="1232"/>
+        <image name="happy.png" width="350" height="350"/>
+        <image name="health3.png" width="350" height="350"/>
+        <image name="imomushiman.png" width="320" height="322"/>
+        <image name="mild.png" width="320" height="322"/>
+        <image name="mixer.png" width="328" height="699"/>
+        <image name="nervous.png" width="350" height="350"/>
+        <image name="pahu.png" width="234" height="219"/>
+        <image name="pinkSm.png" width="127" height="312"/>
+        <image name="skin.png" width="350" height="350"/>
+        <image name="snowman.png" width="320" height="322"/>
+        <image name="spring.png" width="320" height="322"/>
+        <image name="summer.png" width="320" height="322"/>
+        <image name="sweet.png" width="320" height="322"/>
+        <image name="tired2.png" width="350" height="350"/>
+        <image name="top.png" width="304" height="136"/>
+        <image name="topname.png" width="375" height="186"/>
+        <image name="unhappy2.png" width="350" height="350"/>
+    </resources>
+</document>
